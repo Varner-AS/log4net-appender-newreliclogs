@@ -6,9 +6,9 @@
     <title>NewRelic Logs appender for log4net</title>
     <authors>Stanislav Sokolov</authors>
     <license type="expression">Apache-2.0</license>
-    <projectUrl>https://github.com/stanisls/serilog-sinks-newreliclogs</projectUrl>
+    <projectUrl>https://github.com/Varner-AS/log4net-appender-newreliclogs</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <repository type="git" url="https://github.com/stanisls/serilog-sinks-newreliclogs.git" />
+    <repository type="git" url="https://github.com/Varner-AS/log4net-appender-newreliclogs.git" />
     <description>A log4net appender that writes events to version 1 of the NewRelic Logs API.</description>
     <releaseNotes>Initial implementation, supporting logs-in-conext</releaseNotes>
     <tags>log4net,logging,newrelic,log</tags>
