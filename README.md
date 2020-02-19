@@ -44,6 +44,8 @@ The appender uses the value of the "NewRelic.AppName" appSetting to populate at 
 * *ingestionUrl* is the ingestion URL of NewRelic Logs.
 * *licenceKey* is the NewRelic License key, which is also used with the NewRelic Agent.
 * *insertKey* is New Relic Insert API key. Either *licenseKey* or *insertKey* must be supplied or the appender will enter a disabled state.
+If the *licenceKey* or *insertKey* are filled by a placeholder which starts with `#{` (as in the example above), the appender
+will remain in the disabled state until the placeholder value is replaced by the actual key during deployment transform application.
 
 The events are submitted to NewRelic Logs in batches, and the appender is derived from `BufferingAppenderSkeleton`. It therefore supports the following parameter:
 * *bufferSize* is the maximum number of events to include in a single batch.
