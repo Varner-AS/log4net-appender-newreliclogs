@@ -18,7 +18,7 @@ Below is a sample configuration, embedded in app.config
       <bufferSize value="10" />
       <ingestionUrl value="https://log-api.newrelic.com/log/v1" />
       <licenceKey value="#{licenseKey}" />
-      <exclueLog4NetProperties value="true" />
+      <excludeLog4NetProperties value="true" />
       <threshold value="Debug"/>
       <evaluator type="Log4net.Appender.NewRelicLogs.TimeAndLevelEvaluator, Log4net.Appender.NewRelicLogs">
         <threshold value="Error"/>

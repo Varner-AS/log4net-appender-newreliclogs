@@ -20,7 +20,7 @@ namespace Log4net.Appender.NewRelicLogs
         public string IngestionUrl { get; set; }
         public string LicenceKey { get; set; }
         public string InsertKey { get; set; }
-        public bool ExclueLog4NetProperties { get; set; }
+        public bool ExcludeLog4NetProperties { get; set; }
 
         private string AppName { get; }
 
@@ -115,7 +115,7 @@ namespace Log4net.Appender.NewRelicLogs
                             continue;
                         }
 
-                        if (ExclueLog4NetProperties && propKey.StartsWith("log4net", StringComparison.CurrentCultureIgnoreCase))
+                        if (ExcludeLog4NetProperties && propKey.StartsWith("log4net", StringComparison.CurrentCultureIgnoreCase))
                         {
                             continue;
                         }

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Log4net.Appender.NewRelicLogs</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <title>NewRelic Logs appender for log4net</title>
     <authors>Stanislav Sokolov</authors>
     <license type="expression">Apache-2.0</license>
@@ -10,7 +10,10 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <repository type="git" url="https://github.com/Varner-AS/log4net-appender-newreliclogs.git" />
     <description>A log4net appender that writes events to version 1 of the NewRelic Logs API.</description>
-    <releaseNotes>Initial implementation, supporting logs-in-conext</releaseNotes>
+    <releaseNotes>
+      Initial implementation, supporting logs-in-context.
+      1.0.2 - fix property naming typo
+    </releaseNotes>
     <tags>log4net,logging,newrelic,log</tags>
     <dependencies>
       <group targetFramework="net452">
